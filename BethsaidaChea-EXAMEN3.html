@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+</head>
+
+<body>
+
+    <script>
+        //Arreglos y funciones 
+
+        /*Escribir un programa JavaScript orientado a objetos, llamado TuNombre_Examen3, que
+        realice las siguientes operaciones:
+        • Crear dos matrices de tamaño con los siguientes datos.
+        • Rellenar la primera con los datos: 3, 2, 1, 1, 2, 3, 2, 3, 1.
+        • Rellenar la segunda con los datos: 1, 1, 2, 2, 1, 1, 1, 2, 1.
+        • Mostrar el contenido de ambas matrices.
+        • Multiplicar la primera por la segunda y mostrar el resultado.
+        • Sumar la primera por la segunda y mostrar el resultado.
+        */
+
+        class Matriz {
+            matriz1 = [3, 2, 1, 1, 2, 3, 2, 3, 1];
+            matriz2 = [1, 1, 2, 2, 1, 1, 1, 2, 1];
+
+            mostrar() {
+                console.log("Arreglo 1: ", this.matriz1);
+                console.log("--------------------------");
+
+
+                console.log("Arreglo 2: ", this.matriz2);
+                console.log("--------------------------");
+            }
+
+
+            sumar_y_Multiplicar() {
+                for(let i in this.matriz1){
+                console.log(this.matriz1[i] + " + " + this.matriz2[i] + " = " + (this.matriz1[i] + this.matriz2[i]))
+                console.log(this.matriz1[i] + " * " + this.matriz2[i] + " = " + (this.matriz1[i] * this.matriz2[i]))
+                console.log("--------------------------")
+
+                }
+            }
+
+           
+        }
+        let matriz = new Matriz();
+        matriz.mostrar();
+        matriz.sumar_y_Multiplicar();
+        
+        
+        
+        
+
+        
+
+
+
+    </script>
+
+</body>
+
+</html>

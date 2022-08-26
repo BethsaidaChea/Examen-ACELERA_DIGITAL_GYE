@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+</head>
+
+<body>
+
+    <script>
+        //Clases y herencia
+
+        class Persona{
+            nombre;
+            apellido;
+            edad;
+
+            constructor(nombre, apellido, edad){
+                this.nombre=nombre;
+                this.apellido=apellido;
+                this.edad=edad;
+            }
+
+            getDetalles(){
+                console.log(nombre,apellido,edad);
+            }
+
+        }
+
+        class Empleado extends Persona{
+            tipo;
+            constructor(nombre, apellido, edad, tipo){
+                super(nombre, apellido, edad);
+                this.tipo=tipo;
+            }
+            getDetalles(){
+                console.log(this.nombre, this.apellido, this.edad, this.tipo);
+            }
+        }
+
+        class Nomina{
+            
+        }  
+        let empleado= new Empleado();
+        empleado.getDetalles("Bethsaida", "Chea", 23, "C");
+
+    </script>
+
+</body>
+
+</html>
